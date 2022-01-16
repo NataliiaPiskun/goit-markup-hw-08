@@ -2,11 +2,17 @@
   border-bottom: 1px solid #ececec;
 
   .header {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
     // width: 1170px;
     padding: 16px 15px;
+  }
+}
+
+.navbar {
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -14,10 +20,6 @@
   display: flex;
   &__item:not(:last-child) {
     margin-right: 50px;
-  }
-
-  @media screen and (max-width: 479px) {
-    display: none;
   }
 }
 .navbar-list__link {
@@ -67,7 +69,7 @@
     margin-left: 50px;
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }

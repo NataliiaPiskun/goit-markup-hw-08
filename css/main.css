@@ -27,9 +27,13 @@ body {
 }
 
 .container {
-  width: 480px;
   padding: 0 15px;
   margin: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 html {
@@ -65,7 +69,20 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .page-header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 16px 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .navbar-list {
@@ -75,11 +92,6 @@ img {
 }
 .navbar-list__item:not(:last-child) {
   margin-right: 50px;
-}
-@media screen and (max-width: 479px) {
-  .navbar-list {
-    display: none;
-  }
 }
 
 .navbar-list__link {
@@ -140,7 +152,7 @@ img {
 .contacts-list__item {
   margin-left: 50px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .contacts-list {
     display: none;
   }
@@ -234,6 +246,18 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  width: 100px;
+}
+.menu-container.is-open {
+  display: block;
 }
 
 .hero--overlay {
