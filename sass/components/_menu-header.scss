@@ -4,6 +4,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -12,19 +16,31 @@
 
 .menu-button.is-open .icon-cross {
   display: block;
+  z-index: 1000;
 }
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  width: 100px;
 
-  &.is-open {
-    display: block;
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-white-color;
+    z-index: 99;
+
+    &.is-open {
+      display: block;
+      overflow-y: scroll;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
