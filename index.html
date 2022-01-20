@@ -94,28 +94,30 @@
         </div>
 
             <!-- Таблетка и Десктоп -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-list__item"><a href="./index.html"
-                            class="navbar-list__link navbar-list__link--active">Студия</a></li>
-                    <li class="navbar-list__item"><a href="./portfolio.html" class="navbar-list__link">Портфолио</a></li>
-                    <li class="navbar-list__item"><a href="#" class="navbar-list__link">Контакты</a></li>
-                </ul>
+            <div class="header-tablet">
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-list__item"><a href="./index.html"
+                                class="navbar-list__link navbar-list__link--active">Студия</a></li>
+                        <li class="navbar-list__item"><a href="./portfolio.html" class="navbar-list__link">Портфолио</a></li>
+                        <li class="navbar-list__item"><a href="#" class="navbar-list__link">Контакты</a></li>
+                    </ul>
+                </nav>
                 <ul class="contacts-list">
                     <li class="contacts-list__item">
-                        <a href="mailto:info@devstudio.com" class="contacts-list__link contacts-list__link-tablet">
+                        <a href="mailto:info@devstudio.com" class="contacts-list__link">
                             <svg class="contacts-list__icon" width="16px" height="12px">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="contacts-list__item">
-                        <a href="tel:+380961111111" class="contacts-list__link contacts-list__link-tablet">
+                        <a href="tel:+380961111111" class="contacts-list__link">
                             <svg class="contacts-list__icon" width="10px" height="16px">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
+           </div>
             
         </div>
     </header>
@@ -124,14 +126,16 @@
 
     <!-- Герой -->
     
-        <section class="hero hero--overlay">
-            <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
-            <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+        <section class="hero">
+            <div class="conteiner hero--overlay">
+                <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
+                <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+            </div>   
         </section>
     
     <!-- Наши преимущества -->
            
-        <section class="section">
+        <section class="section features">
             <div class="container">
                 <h2 class="hidden-elem">Преимущества</h2>
                 <ul class="feature-list">
@@ -187,10 +191,11 @@
                 <ul class="work-list">
                     <li class="work-list__item">
                         <div class="work-list__img">
-                            <img src="./images/img.jpg" 
+                            <img srcset="./images/img-1.jpg 1x,
+                                         ./images/img-1@2x.jpg 2x"
+                                src="./images/img-1.jpg" 
                                 alt="Руки набирают текст на клавиатуре" 
-                                width="370" 
-                                height="294">
+                                width="370">
                             <div class="work-descript">
                                 <p class="work-descript__title">Десктопные приложения</p>
                             </div>
@@ -199,10 +204,11 @@
                   
                     <li class="work-list__item">
                         <div class="work-list__img">
-                            <img src="./images/img-1.jpg" 
+                            <img srcset="./images/img-2.jpg 1x,
+                                        ./images/img-2@2x.jpg 2x"
+                                src="./images/img-2.jpg" 
                                 alt="Мобильное приложение" 
-                                width="370" 
-                                height="294">
+                                width="370">
                             <div class="work-descript">
                                 <p class="work-descript__title">Мобильные приложения</p>
                             </div>
@@ -211,7 +217,9 @@
 
                     <li class="work-list__item">
                         <div class="work-list__img">
-                            <img src="./images/img-2.jpg" 
+                            <img srcset="./images/img-3.jpg 1x,
+                                        ./images/img-3@2x.jpg 2x"
+                                src="./images/img-3.jpg" 
                                 alt="Спектр цветов" 
                                 width="370" 
                                 height="294">
@@ -232,9 +240,9 @@
                 
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/Ihor.jpg" 
-                            alt="Игорь Демьяненко" 
-                            width="450">
+                        <img srcset="./images/Ihor-450.jpg 1x, ./images/Ihor-450@2x.jpg 2x"
+                        src="./images/Ihor.jpg" 
+                            alt="Игорь Демьяненко">
                         <div class="team-box">
                             <h3 class="team-box__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-box__profession">Product Designer</p>
@@ -274,7 +282,8 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/Helga.jpg" alt="Ольга Репина" width="450">
+                        <img srcset="./images/Helga-450.jpg 1x, ./images/Helga-450@2x.jpg 2x"
+                        src="./images/Helga.jpg" alt="Ольга Репина">
                         <div class="team-box">
                             <h3 class="team-box__name">Ольга Репина</h3>
                             <p lang="en" class="team-box__profession">Frontend Developer</p>
@@ -315,7 +324,8 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/Nikolya.jpg" class="team-list__photo" alt="Николай Тарасов" width="450">
+                        <img srcset="./images/Nikolya-450.jpg 1x, ./images/Nikolya-450@2x.jpg 2x"
+                        src="./images/Nikolya.jpg" class="team-list__photo" alt="Николай Тарасов">
                         <div class="team-box">
                             <h3 class="team-box__name">Николай Тарасов</h3>
                             <p lang="en" class="team-box__profession">Marketing</p>
@@ -356,7 +366,8 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/Michael.jpg" class="team-photo" alt="Михаил Ермаков" width="450">
+                        <img srcset="./images/Michael-450.jpg 1x, ./images/Michael-450@2x.jpg 2x"
+                        src="./images/Michael.jpg" class="team-photo" alt="Михаил Ермаков">
                         <div class="team-box">
                             <h3 class="team-box__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-box__profession">UI Designer</p>

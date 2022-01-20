@@ -96,13 +96,15 @@
             </div>
 
             <!-- Таблетка и Десктоп -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-list__item"><a href="./index.html"
-                            class="navbar-list__link">Студия</a></li>
-                    <li class="navbar-list__item"><a href="./portfolio.html" class="navbar-list__link navbar-list__link--active">Портфолио</a></li>
-                    <li class="navbar-list__item"><a href="#" class="navbar-list__link">Контакты</a></li>
-                </ul>
+            <div class="header-tablet">
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-list__item"><a href="./index.html"
+                                class="navbar-list__link">Студия</a></li>
+                        <li class="navbar-list__item"><a href="./portfolio.html" class="navbar-list__link navbar-list__link--active">Портфолио</a></li>
+                        <li class="navbar-list__item"><a href="#" class="navbar-list__link">Контакты</a></li>
+                    </ul>
+                </nav>
                 <ul class="contacts-list">
                     <li class="contacts-list__item">
                         <a href="mailto:info@devstudio.com" class="contacts-list__link">
@@ -117,7 +119,7 @@
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
+           </div>
             
         </div>
     </header>
@@ -148,10 +150,10 @@
                 <article class="card">
                     <a href="#" class="card__link">
                         <div class="card__thumb">
-                            <img src="./images/people.jpg" 
+                            <img srcset="./images/people-450.jpg 1x, ./images/people-450@2x.jpg 2x"
+                            src="./images/people.jpg" 
                             class="card__image" 
-                            alt="Наши люди" 
-                            width="370">
+                            alt="Наши люди">
                             <div class="card__info">
                                 <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>

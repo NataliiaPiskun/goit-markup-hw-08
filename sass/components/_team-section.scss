@@ -12,24 +12,29 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .team-list {
   // display: flex;
-  margin: -15px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+   
   }
 }
 
 .social-list__item {
-  margin: 15px;
 
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
+   
   }
 
   @media screen and (min-width: 1200px) {
@@ -81,6 +86,7 @@
 .social-list {
   display: flex;
   justify-content: center;
+  
 }
 
 .social-list__item {

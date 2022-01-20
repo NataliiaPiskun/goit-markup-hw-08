@@ -7,29 +7,24 @@
     justify-content: space-between;
 
     @media screen and (max-width: 767px) {
-      
-      position: relative;
       padding: 16px 15px;
     }
 
     @media screen and (min-width: 768px) {
-      
       width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      width: 1170px;
-   
       width: 1200px;
     }
   }
     
 }
 
-.navbar {
+.header-tablet {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -45,10 +40,20 @@
   }
   }
 
+.navbar {
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  margin-right: 305px;
+  }
+}
 
 .navbar-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    
   }
 }
 
@@ -60,15 +65,16 @@
 
 
 .navbar-list__link {
-  padding-top: 32px;
-  padding-bottom: 28px;
-
+  display: block;
   color: $title-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  cursor: pointer;
 
   transform: scale(1);
   transition: transform 250ms $timing-function;
@@ -79,6 +85,9 @@
     transform: scale(1.1);
     transition: transform 250ms $timing-function;
   }
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .navbar-list__link--active {
@@ -87,14 +96,15 @@
     content: "";
     display: block;
     position: relative;
-    top: 29px;
-    bottom: auto;
+    top: 33px;
     width: 100%;
+    bottom: auto;
     height: 4px;
     background-color: $accent-color;
-    border-radius: 4px;
+    border-radius: 2px;
   }
 }
+
 // .navigation-list {
 //   display: flex;
 //   &__item:not(:last-child) {
@@ -102,15 +112,6 @@
 //   }
 // }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 
 // .navigation-list {
 //   margin-top: 48px;
@@ -119,11 +120,7 @@
 
 
 
-@media screen and (min-width: 768px) {
-.contacts-list__link-tablet:not(:last-child) {
-    margin-bottom: 10px;
-}
-}
+
 
 // .contacts {
 //   // margin-bottom: 64px;
