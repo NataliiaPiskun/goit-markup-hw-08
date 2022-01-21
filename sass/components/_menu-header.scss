@@ -23,7 +23,7 @@
 
 .menu-button.is-open .icon-cross {
   display: block;
-  
+ 
 }
 
 .menu-button.is-open .icon-menu {
@@ -129,23 +129,29 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
+    &:hover,
+    &:focus {
+    @media screen and (min-width: 767px) {
+      color: $accent-color;
+      transition: color 250ms $timing-function;
+    }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
   }
 
   .contacts-list__icon {
     margin-right: 10px;
     fill: currentColor;
-    &:hover,
-    &:focus {
-      fill: $accent-color;
   
-      transition: transform 250ms $timing-function;
-    }
   
     @media screen and (max-width: 767px) {
       display: none;
     }
-    
-}   
+  }
 
 .contacts-list__icon--smartphone {
     @media screen and (min-width: 768px) {
