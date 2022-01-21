@@ -80,8 +80,8 @@
   }
 
   @media screen and (min-width:768px) {
-  flex-basis: calc((100% - 4 * 15px) / 2);
-  margin-right: 30px;
+   flex-basis: calc((100% - 4 * 15px) / 2);
+    margin-right: 30px;
   }
 
   @media screen and (min-width:1200px) {
@@ -100,16 +100,17 @@
   }
 }
 
-.card {
-  display: flex;
-}
-
 .card__link {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   text-decoration: none;
 }
 
 .card__border {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -163,6 +164,14 @@
 
   transform: translateY(100%);
   transition: transform 250ms $timing-function;
+
+  @media screen and (min-width:768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 63px 24px;
+  }
 
   .card__thumb:hover & {
     transform: translateY(0%);
