@@ -4,14 +4,34 @@
   background-color: $bcg-main-color;
 }
 
-// .footer-box {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer-box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+ 
+  @media screen and (min-width: 1200px) {
+ display: flex;
+ align-items: baseline;
+ justify-content: space-between;
+}
+}
 
-// .container-footer {
-//   margin-right: 70px;
-// }
+.container-footer {
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 165px;
+}
+@media screen and (min-width: 1200px) {
+  align-items: flex-start;
+  margin-right: 70px;
+}
+}
 
 .address {
   // display: inline-block;
@@ -23,6 +43,11 @@
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    text-align: left;
+  }
 
   &__street {
     display: inline-block;
@@ -64,7 +89,12 @@
 .join-box {
   text-align: center;
   margin-bottom: 60px;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+  text-align: left;
+  margin-right: 93px;
+  margin-bottom: 0px;
+  }
 
   &__title {
     font-weight: bold;
@@ -113,10 +143,12 @@
   }
 }
 
-// .subscribe {
-//   display: flex;
-//   align-items: flex-end;
-// }
+.subscribe {
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  align-items: flex-end;
+}
+}
 
 .subscribe__box {
   margin-right: 12px;
@@ -133,6 +165,10 @@
 
   margin-bottom: 20px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe__input {
@@ -152,6 +188,15 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+  width: 358px;
+  margin-bottom: 0px;
+}
 }
 
 .subscribe__button {
@@ -183,6 +228,11 @@
 
     transform: scale(1.1);
     transition: transform 250ms $timing-function;
+  }
+
+  @media screen and (min-width: 1200px) {
+   padding: 0px;
+    margin: 0px;
   }
 }
 .subscribe__icon {

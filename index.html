@@ -106,13 +106,13 @@
                 <ul class="contacts-list">
                     <li class="contacts-list__item">
                         <a href="mailto:info@devstudio.com" class="contacts-list__link">
-                            <svg class="contacts-list__icon" width="16px" height="12px">
+                            <svg class="contacts-list__icon contacts-list__icon--envelope">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="contacts-list__item">
                         <a href="tel:+380961111111" class="contacts-list__link">
-                            <svg class="contacts-list__icon" width="10px" height="16px">
+                            <svg class="contacts-list__icon  contacts-list__icon--smartphone">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
@@ -207,8 +207,7 @@
                             <img srcset="./images/img-2.jpg 1x,
                                         ./images/img-2@2x.jpg 2x"
                                 src="./images/img-2.jpg" 
-                                alt="Мобильное приложение" 
-                                width="370">
+                                alt="Мобильное приложение">
                             <div class="work-descript">
                                 <p class="work-descript__title">Мобильные приложения</p>
                             </div>
@@ -220,9 +219,7 @@
                             <img srcset="./images/img-3.jpg 1x,
                                         ./images/img-3@2x.jpg 2x"
                                 src="./images/img-3.jpg" 
-                                alt="Спектр цветов" 
-                                width="370" 
-                                height="294">
+                                alt="Спектр цветов">
                             <div class="work-descript">
                                 <p class="work-descript__title">Дизайнерские решения</p>
                             </div>
@@ -240,9 +237,13 @@
                 
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img srcset="./images/Ihor-450.jpg 1x, ./images/Ihor-450@2x.jpg 2x"
-                        src="./images/Ihor.jpg" 
+                        <picture>
+                            <source srcset="./images/Ihor-270.jpg 270w, ./images/Ihor-270@2x.jpg 540w," type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 1200px)" 270px, 100vw>
+                            <source srcset="./images/Ihor-354.jpg 354w, ./images/Ihor-354@2x.jpg 708w," type="image/jpeg" media="(min-width: 768px)" sizes="(min-width: 768px)" 354px, 100vw>
+                            <source srcset="./images/Ihor-450.jpg 450w, ./images/Ihor-450@2x.jpg 900w," type="image/jpeg" media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw>
+                            <img src="./images/Ihor.jpg" 
                             alt="Игорь Демьяненко">
+                        </picture>
                         <div class="team-box">
                             <h3 class="team-box__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-box__profession">Product Designer</p>
@@ -282,8 +283,12 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img srcset="./images/Helga-450.jpg 1x, ./images/Helga-450@2x.jpg 2x"
-                        src="./images/Helga.jpg" alt="Ольга Репина">
+                        <picture>
+                            <source srcset="./images/Helga-270.jpg 270w, ./images/Helga-270@2x.jpg 540w," type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 1200px)" 270px, 100vw>
+                            <source srcset="./images/Helga-354.jpg 354w, ./images/Helga-354@2x.jpg 708w," type="image/jpeg" media="(min-width: 768px)" sizes="(min-width: 768px)" 354px, 100vw>
+                            <source srcset="./images/Helga-450.jpg 450w, ./images/Helga-450@2x.jpg 900w," type="image/jpeg" media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw>
+                        <img src="./images/Helga.jpg" alt="Ольга Репина">
+                        </picture>
                         <div class="team-box">
                             <h3 class="team-box__name">Ольга Репина</h3>
                             <p lang="en" class="team-box__profession">Frontend Developer</p>
@@ -324,8 +329,12 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img srcset="./images/Nikolya-450.jpg 1x, ./images/Nikolya-450@2x.jpg 2x"
-                        src="./images/Nikolya.jpg" class="team-list__photo" alt="Николай Тарасов">
+                        <picture>
+                            <source srcset="./images/Nikolya-270.jpg 270w, ./images/Nikolya-270@2x.jpg 540w," type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 1200px)" 270px, 100vw>
+                            <source srcset="./images/Nikolya-354.jpg 354w, ./images/Nikolya-354@2x.jpg 708w," type="image/jpeg" media="(min-width: 768px)" sizes="(min-width: 768px)" 354px, 100vw>
+                            <source srcset="./images/Nikolya-450.jpg 450w, ./images/Nikolya-450@2x.jpg 900w," type="image/jpeg" media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw>
+                        <img src="./images/Nikolya.jpg" class="team-list__photo" alt="Николай Тарасов">
+                        </picture>
                         <div class="team-box">
                             <h3 class="team-box__name">Николай Тарасов</h3>
                             <p lang="en" class="team-box__profession">Marketing</p>
@@ -366,8 +375,11 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img srcset="./images/Michael-450.jpg 1x, ./images/Michael-450@2x.jpg 2x"
-                        src="./images/Michael.jpg" class="team-photo" alt="Михаил Ермаков">
+                        <picture>
+                            <source srcset="./images/Michael-270.jpg 270w, ./images/Michael-270@2x.jpg 540w," type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 1200px)" 270px, 100vw>
+                            <source srcset="./images/Michael-354.jpg 354w, ./images/Michael-354@2x.jpg 708w," type="image/jpeg" media="(min-width: 768px)" sizes="(min-width: 768px)" 354px, 100vw>
+                            <source srcset="./images/Michael-450.jpg 450w, ./images/Michael-450@2x.jpg 900w," type="image/jpeg" media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw>
+                        <img src="./images/Michael.jpg" class="team-photo" alt="Михаил Ермаков">
                         <div class="team-box">
                             <h3 class="team-box__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-box__profession">UI Designer</p>
@@ -412,8 +424,8 @@
 
         <!-- Наши постоянные клиенты -->
 
-    <div class="container">
-        <section class="client-section">
+    <section class="client-section">
+        <div class="container">
             <h2 class="client-section__title">Постоянные клиенты</h2>
             <ul class="client-section__list">
                 <li class="client-section__item">
@@ -464,8 +476,8 @@
                     </a>
                 </li>
             </ul>
-        </section>
-    </div>
+        </div>
+    </section>
     </main>
 
     <!-- Подвал страницы -->
