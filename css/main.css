@@ -286,8 +286,9 @@ img {
   }
 }
 
-.menu-button .icon-cross {
-  display: none;
+.menu-button__cross {
+  position: absolute;
+  left: 425px;
 }
 
 .menu-button.is-open .icon-cross {
@@ -306,7 +307,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 48px;
+    padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
     background-color: #ffffff;
@@ -331,6 +332,7 @@ img {
           justify-content: space-between;
   height: 100%;
   background-color: #ffffff;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -346,6 +348,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  margin-top: 30px;
 }
 .navigation-list__link:not(last-child) {
   margin-bottom: 32px;
@@ -476,6 +479,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 

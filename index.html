@@ -25,26 +25,36 @@
         <a href="/" class="logo">
             <span lang="en">Web</span><span class="logo__text">Studio</span>
         </a>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-            <svg class="icon-menu"
+        <button type="button" 
+            class="menu-button" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-button>
+            <svg
             width="40" 
             height="40"
             aria-label="Переключатель мобильного меню">
-                <use href="./images/icons.svg#menu-burger"></use>
+                <use class="icon-menu" href="./images/icons.svg#menu-burger"></use>
+                <!-- <use class="icon-cross" href="./images/icons.svg#menu-cross"></use> -->
             </svg>
         </button>
 
         <!-- Мобильное меню -->
         <div class="menu-container" id="menu-container" data-menu>
+            <button type="button" 
+            class="menu-button menu-button__cross" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-button>
+                <svg class="icon-cross"
+                width="40" 
+                height="40"
+                aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#menu-cross"></use>
+                </svg>
+            </button> 
             <div class="menu">
-                    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                        <svg class="icon-cross"
-                        width="40" 
-                        height="40"
-                        aria-label="Переключатель мобильного меню">
-                        <use href="./images/icons.svg#menu-cross"></use>
-                        </svg>
-                    </button> 
+             
                     <nav class="nav">
                         <ul class="navigation-list">
                             <li class="navigation-list__item">
@@ -59,6 +69,7 @@
                             </li>
                         </ul>
                     </nav>
+              
                 <div class="contacts">
                     <ul class="contacts-list">
                         <li class="contacts-list__item">
