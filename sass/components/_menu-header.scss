@@ -64,8 +64,6 @@
 
 
     &.is-hidden {
-      // display: block;
-      // overflow-y: scroll;
       opacity: 1;
       visibility: visible;
       
@@ -76,7 +74,7 @@
 
   .mob-menu {
     position: relative;
-    height: 100vw;
+    height: 100%;
     background-color: $primary-white-color;
     display: flex;
     flex-direction: column;
