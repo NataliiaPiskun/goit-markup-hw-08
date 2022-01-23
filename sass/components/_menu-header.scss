@@ -1,11 +1,11 @@
-.menu-button {
+.menu__button-open {
   display: inline-flex;
   cursor: pointer;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 100;
+  // z-index: 100;
 
   &:hover,
   &:focus {
@@ -17,24 +17,34 @@
   }
 }
 
-.menu-button__cross{
+.menu__button-close {
   position: absolute;
-  left: 425px;
-}
+  right: 15px;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+}
+}
 // .menu-button .icon-cross {
 //   display: none;
 // }
 
-.menu-button.is-open .icon-cross {
-  display: block;
-}
+// .menu-button.is-hidden .menu__button-close {
+//   display: block;
+// }
 
-.menu-button.is-open .icon-menu {
-  display: none;
-}
+// .menu-button.is-hidden .menu__button-open {
+//   display: none;
+// }
 
-.menu-container {
+.menu {
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -43,25 +53,28 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 10px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+  
     background-color: $primary-white-color;
     z-index: 99;
+    margin: 0px auto;
 
-    &.is-open {
+    &.is-hidden {
       display: block;
       overflow-y: scroll;
       }
     }
   }
 
-  .menu {
+  .mob-menu {
+    position: relative;
+    height: 100%;
+    background-color: $primary-white-color;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    background-color: $primary-white-color;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    padding-left: 40px;
 
     overflow: hidden;
   

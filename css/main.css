@@ -266,7 +266,7 @@ img {
   color: #ffffff;
 }
 
-.menu-button {
+.menu__button-open {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -275,51 +275,54 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 100;
 }
-.menu-button:hover, .menu-button:focus {
+.menu__button-open:hover, .menu__button-open:focus {
   fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu__button-open {
     display: none;
   }
 }
 
-.menu-button__cross {
+.menu__button-close {
   position: absolute;
-  left: 425px;
+  right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
+.menu__button-close:hover, .menu__button-close:focus {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .menu {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 10px;
-    padding-bottom: 48px;
-    padding-left: 40px;
     background-color: #ffffff;
     z-index: 99;
+    margin: 0px auto;
   }
-  .menu-container.is-open {
+  .menu.is-hidden {
     display: block;
     overflow-y: scroll;
   }
 }
 
-.menu {
+.mob-menu {
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,12 +333,13 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
-  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .menu {
+  .mob-menu {
     display: none;
   }
 }
