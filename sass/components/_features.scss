@@ -62,6 +62,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+}
 }
 
 .feature-list__text {

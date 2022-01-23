@@ -698,6 +698,11 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (min-width: 768px) {
+  .feature-list__title {
+    text-align: start;
+  }
+}
 
 .feature-list__text {
   font-size: 14px;
@@ -768,6 +773,12 @@ img {
   padding-bottom: 60px;
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .team-section__title {
   text-align: center;
   font-weight: bold;
@@ -779,6 +790,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-section__title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
@@ -921,6 +934,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .client-title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }

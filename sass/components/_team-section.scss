@@ -4,6 +4,11 @@
   padding-bottom: 60px;
   background-color: $bcg-secondary;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     text-align: center;
     font-weight: bold;
@@ -14,6 +19,8 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.16;
       margin-bottom: 50px;
     }
   }
