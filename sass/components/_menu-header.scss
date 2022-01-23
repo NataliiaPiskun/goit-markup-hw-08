@@ -58,6 +58,7 @@
 
     opacity: 0;
     visibility: hidden;
+
     transition: opacity 250ms $timing-function,
     visibility 250ms $timing-function;
 
@@ -68,14 +69,14 @@
       opacity: 1;
       visibility: visible;
       
-  }
+      }
       }
     }
   
 
   .mob-menu {
     position: relative;
-    height: 100%;
+    height: 100vw;
     background-color: $primary-white-color;
     display: flex;
     flex-direction: column;
