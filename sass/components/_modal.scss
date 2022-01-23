@@ -45,7 +45,7 @@
 }
 }
 
-.close-modal {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-.close-modal__icon {
+.modal__icon-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -67,7 +67,7 @@
 
   transition: background-color 250ms $timing-function;
 
-  .close-modal:hover & {
+  .modal__button-close:hover & {
     fill: $accent-color;
 
     transition: background-color 250ms $timing-function;
